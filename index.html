@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hung</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <title>Portfolio | hansama18</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- header start -->
     <div class="header container">
-        <nav class="navbar">
-            <a href="#" class="navbar__list">About Me</a>
-            <a href="#" class="navbar__list">Portfolio</a>
-            <a href="#" class="navbar__list">Skills</a>
+        <nav class="navbar-pc">
+            <a href="index.html" class="navbar__list-pc">Home</a>
+            <a href="#about-me" class="navbar__list-pc">About Me</a>
+            <a href="#skills" class="navbar__list-pc">Skills</a>
+            <a href="#portfolio" class="navbar__list-pc">Portfolio</a>
         </nav>
         <input type="checkbox" class="nav__input" id="nav-mobile-input">
         <div class="navbar__btn">
@@ -23,38 +25,160 @@
         <label for="nav-mobile-input" class="overlay"></i></label>
         <nav class="navbar--mobile">
             <div class="navbar__mb">
-                <a href="#" class="navbar__list-mobile">About Me</a>
-                <a href="#" class="navbar__list-mobile">Portfolio</a>
-                <a href="#" class="navbar__list-mobile">Skills</a>
+                <a href="index.html" class="navbar__list-mobile">Home</a>
+                <a href="#about-me" class="navbar__list-mobile">About Me</a>
+                <a href="#skills" class="navbar__list-mobile">Skills</a>
+                <a href="#portfolio" class="navbar__list-mobile">Portfolio</a>
                 <label for="nav-mobile-input"><i class="fa fa-times"></i></label>
             </div>
-        </nav><a href="#" class="btn btn-contact btn-contact-pc">Contact</a>
-        
+        </nav>
+        <a href="mailto:nguyenhung18ce@gmail.com" class="btn btn-contact btn-contact-pc">Contact</a>   
     </div>
+    <!-- header end -->
 
+    <!-- content start -->
     <div class="content container">
-        <div class="row information">
-            <div class="col-xl-5 col-lg-5 col-sm-12 textbox">
+        <!-- introduce start -->
+        <div class="row g-0 content__introduce">
+            <div class="col-xl-5 col-lg-5 col-sm-12 content__introduce-textbox" id="about-me">
                 <h3 class="textbox__heading">My name is</h3>
                 <h3 class="textbox__heading--name">Hung</h3>
-                <p class="textbox__heading--sub">I'm a front-end fresher, inexperienced</p>
-                <a href="#" class="btn btn-hire">hire me</a>
-                <div class="skillbox">
+                <p class="textbox__heading--sub">I code beautifully simple things, and I love what I do.</p>
+                <a href="https://www.topcv.vn/xem-cv/CVIFUFwGBgVbVQJRAlBXAgYEDwQDVgcBU1cFAA9a61" target="_blank" class="btn btn-cv">My CV</a>
+                <div class="content__introduce-skillbox">
                     <span class="btn-skill btn-html">html</span>
                     <span class="btn-skill btn-css">css</span>
                     <span class="btn-skill btn-javascript">javascript</span>
                     <span class="btn-skill btn-bootstrap">bootstrap</span>
                 </div>
             </div>
-            <div class="col-xl-7 col-lg-7 col-sm-12 imagebox">
-                    <span class="btn-skill exp-box">6+ month<p>experience</p></span>
+            <div class="col-xl-7 col-lg-7 col-sm-12 content__introduce-imagebox">
                     <img src="https://www.multidots.com/wp-content/uploads/2020/01/code-quality-standard.png?quality=90" alt="" class="background">
             </div>
         </div>
+        <!-- introduce end -->
 
-        <div class="row projects">
+        <!-- skill start -->
+        <div class="row gx-5 gy-5 content__skill" id="skills">
+            
+            <div class="col-xl-4 col-lg-4 col-sm-12 content__skill-box">
+                <div class="containerbox">
+                    <span class="content__skill-image">
+                        <i class="fas fa-cogs fa-beat-fade"></i></i>
+                    </i></span>
+
+                    <h3 class="content__skill-title">Tools</h3>
+
+                    <p class="content__skill-description">I can use some interface design tools and code management tools.</p>
+
+                    <div class="content__skill-technologies">
+                        <h6>Technologies</h6>
+                        <p>Git, Figma</p>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="col-xl-4 col-lg-4 col-sm-12 content__skill-box">
+                <div class="containerbox">
+                    <span class="content__skill-image">
+                        <i class="fas fa-code fa-beat-fade"></i>
+                    </i></span>
+
+                    <h3 class="content__skill-title">Frontend Developer</h3>
+
+                    <p class="content__skill-description">I like to code things from scratch and enjoy bringing ideas to life in the browser.</p>
+
+                    <div class="content__skill-technologies">
+                        <h6>Technologies</h6>
+                        <p>Hmtl, css, javascript, bootstrap</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-lg-4 col-sm-12 content__skill-box">
+                <div class="containerbox">
+                    <span class="content__skill-image">
+                        <i class="fas fa-book fa-beat-fade"></i>
+                    </i></span>
+
+                    <h3 class="content__skill-title">Experience</h3>
+
+                    <p class="content__skill-description">Currently, I am a final-year student, so I do not have much practical work experience (May 2023).</p>
+
+                    <div class="content__skill-technologies">
+                        <h6><br></h6>
+                        <p><br></p>
+                    </div>
+                </div>
+                
+            </div>
+
 
         </div>
+        <!-- skill end -->
+
+        <!-- portfolio start -->
+        <div class="content__portfolio" id="portfolio">
+            <div class="portfolio__heading">
+                <h3>My Recent Projects</h3>
+                <p>Visit <a href="https://github.com/hansama18" target="_blank">my GitHub</a> to see all my source code</p>
+            </div>
+        </div>
+
+        <div class="row gy-5 content__portfolio-row">
+            <div class="col-xl-6 col-lg-6 col-sm-12 content__portfolio-project">
+                <img src="https://images.pexels.com/photos/14936128/pexels-photo-14936128.jpeg?cs=srgb&dl=pexels-ann-h-14936128.jpg&fm=jpg" alt="">
+                <div class="content__portfolio-overlay">
+                    <div class="portfolio-overlay-content">
+                        <p>This is my Portfolio and also my first project</p>
+                        <div class="btn-visit-web">
+                            <a href="https://hansama18.000webhostapp.com/" target="_blank">visit website >></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="col-xl-6 col-lg-6 col-sm-12 content__portfolio-project">
+                <img src="https://www.comicbookherald.com/wp-content/uploads/2017/10/superman-oz-effect.jpg" alt="">
+                <div class="content__portfolio-overlay">
+                    <div class="portfolio-overlay-content">
+                        <p> I have designed the interface for a website based on
+                            the dc.com website</p>
+                        <div class="btn-visit-web">
+                            <a href="https://github.com/hansama18/dc-comics-clone-page" target="_blank">visit my GitHub >></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+
+
+        </div>
+
+        <!-- portfolio end -->
+
+    </div>
+    <!-- content end -->
+
+    <div class="footer">
+        <div class="footer__title">
+            <h3>Constantly learning to improve self-confidence.</h3>
+        </div>
+
+        <div class="footer__icon">
+            <a href="https://www.facebook.com/hungakahan" target="_blank" title="facebook"><i class="fab fa-facebook-square"></i></a >
+            <a href="https://github.com/hansama18" target="_blank" title="github"><i class="fab fa-github-square"></i></a >
+            <a href="#" target="_blank" title="linkedin"><i class="fab fa-linkedin"></i></a >
+            <a href="#" target="_blank" title="twitter"><i class="fab fa-twitter-square"></i></a >
+            <a href="mailto:nguyenhung18ce@gmail.com" target="_blank" title="gmail"><i class="fas fa-envelope-square"></i></a >
+        </div>
+        
+        <div class="footer__sign">
+            <p>&#169; hansama18</p>
+        </div>
+
 
     </div>
 
